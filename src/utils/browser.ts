@@ -1,5 +1,4 @@
 import { detect } from "detect-browser";
-import { Browsers } from "..";
 
 const newBrowser = detect();
 

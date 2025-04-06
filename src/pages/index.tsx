@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Browsers } from "..";
 import Button from "../components/Button";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
