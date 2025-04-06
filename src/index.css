@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html,
+body,
+#root,
+.App {
+  height: 100%;
+}
+
+.App {
+  background-color: #f7f7f7;
+}
+
+.bg-gradient {
+  background: linear-gradient(225deg, #ff00f5 20%, #ff7a00 120%);
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  /* line-height: 1.2; */
+  letter-spacing: -0.05rem;
+}
+
+.custom-container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .custom-container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .custom-container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1084px) {
+  .custom-container {
+    max-width: 1084px;
+  }
+}
+
+.btn {
+  width: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+  gap: 16px;
+
+  background-size: 200% auto;
+  background-image: linear-gradient(
+    225deg,
+    #ff7a00 0%,
+    #ff00f5 50%,
+    #ff7a00 100%
+  );
+  border-radius: 8px;
+  border: none;
+  color: white;
+
+  cursor: pointer;
+  z-index: 1;
+  background-position: left center;
+  transition: background-position 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  border-radius: 8px;
+  background: inherit;
+  filter: blur(4px);
+  transition: filter 0.25s ease-in-out;
+}
+
+.btn:hover {
+  background-position: right center;
+}
+
+.btn:hover::after {
+  filter: blur(8px);
+}
