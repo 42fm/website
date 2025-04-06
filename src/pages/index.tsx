@@ -29,7 +29,7 @@ const Home = () => {
             {"Download for " + browsers[browser].display_name}
           </Button>
         </div>
-        <img src="/assets/cover.png" alt="cover" />
+        <img src="/assets/cover.png" alt="cover" width={372} height={658} />
       </div>
       <Footer />
     </div>
