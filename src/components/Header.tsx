@@ -12,12 +12,6 @@ function Header() {
       </a>
       <div className="flex gap-3 text-sm font-medium">
         <a
-          href="#commands"
-          className="p-2 bg-white outline-1 rounded-lg outline-[#E2E2E2] py-3 px-6"
-        >
-          Commands
-        </a>
-        <a
           href="https://twitch.tv/loczuk"
           className="p-2 bg-white outline-1 rounded-lg outline-[#E2E2E2] py-3 px-6"
         >
